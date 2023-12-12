@@ -22,9 +22,18 @@
     width: 100%;
     height: 130%;
 }
+.search-result,
+.search {
+    width: 360px;
+}
+.search-title {
+    padding: 5px 12px;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: rgba(22, 24, 35, 0.5);
+}
 .search {
     position: relative;
-    width: 360px;
     height: var(--search-height);
     padding-left: 16px;
     background-color: rgba(22, 24, 35, 0.06);
