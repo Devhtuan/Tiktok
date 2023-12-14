@@ -4,6 +4,7 @@ import styles from './Header.module.scss';
 import images from '../../../../assets/images';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleXmark, faSpinner, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
+import Button from '../Button';
 import Tippy from '@tippyjs/react/headless';
 import { Wrapper as PopperWrapper } from '../../../Popper';
 import AccountItem from '../AccountItem';
@@ -51,7 +52,10 @@ function Header() {
                         </button>
                     </div>
                 </Tippy>
-                <div className={cx('action')}></div>
+                <div className={cx('action')}>
+                    <Button text>Tải lên</Button>
+                    <Button primary>Đăng nhập</Button>
+                </div>
             </div>
         </header>
     );
