@@ -11,7 +11,7 @@ function Button({
     outline = false,
     text = false,
     rounded = false,
-    disable = false,
+    disabled = false,
     small = false,
     large = false,
     children,
@@ -28,7 +28,7 @@ function Button({
     };
 
     // Remove event listener when btn is disabled
-    if (disable) {
+    if (disabled) {
         Object.keys(props).forEach((key) => {
             if (key.startsWith('on') && typeof props[key] === 'function') {
                 delete props[key];
@@ -49,7 +49,7 @@ function Button({
         primary,
         outline,
         text,
-        disable,
+        disabled,
         rounded,
         small,
         large,
@@ -63,5 +63,4 @@ function Button({
         </Comp>
     );
 }
-
 export default Button;

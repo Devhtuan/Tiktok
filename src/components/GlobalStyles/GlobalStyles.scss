@@ -7,7 +7,7 @@
     --default-layout-width: 1150px;
     --default-layout-horizontal-spacer: 24px;
     --black-color: #161823;
-    --text-color: #333;
+    --text-color: #161823;
     --search-height: 46px;
     --search-top-spacer: 9px;
     --search-button-width: 52px;
@@ -36,4 +36,24 @@ input,
 a[href] {
     color: var(--text-color);
     text-decoration: none;
+}
+
+//Custom tippy Tooltip
+body {
+    .tippy-box {
+        border-radius: 8px;
+        font-weight: 600;
+        font-size: 1.4rem;
+        line-height: 2.2rem;
+        background-color: rgba(84, 84, 84, 0.92);
+    }
+    .tippy-arrow {
+        color: rgba(84, 84, 84, 0.92);
+    }
+    .tippy-box[data-placement^='bottom'] > .tippy-arrow:before {
+        top: -8px;
+    }
+    .tippy-content {
+        padding: 8px 9px;
+    }
 }
